@@ -233,8 +233,8 @@
         <div class="eyebrow">ACM EC 2026 · Rome, Italy · In-person tutorial</div>
         <h1>Algorithmic Contract Design for Teams</h1>
         <p class="subtitle">
-          A tutorial on combinatorial contract design, with an emphasis on multi-agent environments,
-          algorithmic structure, equilibrium constraints, and emerging research directions.
+          A tutorial on combinatorial contract design for teams, focusing on the fundamental multi-agent binary-action model [DEFK, STOC '23]. 
+          We present main algorithmic ideas and structural insights, survey subsequent developments, and highlight key open problems that define the current research frontier.
         </p>
         <div class="actions">
           <a class="button" href="#outline">View outline</a>
@@ -256,14 +256,11 @@
             must also be approached from an algorithmic perspective.
           </p>
           <p>
-            This tutorial surveys the emerging area of combinatorial contract design, focusing on settings
-            where a principal offers payments to incentivize teamwork. These environments combine a
-            combinatorial selection problem—choosing an effective team of agents—with equilibrium
-            considerations such as preventing free-riding.
+            This tutorial surveys the emerging area of <i>combinatorial contract design</i>, with a focus on multi-agent environments, where a principal offers payments to incentivize teamwork. 
+These environments are particularly challenging, as they combine a selection problem (e.g., choosing an effective team of agents) with equilibrium considerations (e.g., preventing free-riding). 
           </p>
           <p>
-            The goal is to give a unified and accessible introduction to the area: foundational models,
-            algorithmic ideas, structural insights, recent extensions, and open problems.
+            The goal is to give a unified view of the area, covering both foundational models and recent extensions, and highlighting key techniques, structural insights, and open problems. 
           </p>
           <div class="tagline">
             Designed for newcomers to the area, while also serving as a roadmap for researchers interested
@@ -279,13 +276,14 @@
               <div class="topic">
                 <strong>Core model and foundations</strong>
                 <p>
-                  We introduce the multi-agent binary-action model, covering hidden actions, combinatorial
-                  outcome functions, incentive constraints, equilibria, and the structure of optimal contracts.
+                  We introduce the multi-agent binary-action model [DEFK '23], covering hidden actions, combinatorial
+                  reward functions, incentive constraints, equilibria, and the structure of optimal contracts.
                 </p>
                 <ul>
                   <li>Approximation algorithms for XOS and submodular reward functions</li>
-                  <li>Decomposition via additive components</li>
-                  <li>Computing high-value agent sets via demand queries</li>
+                  <li>Core techniques: decomposition of the benchmark and finding good teams via demand queries</li>
+                  <!-- <li>Decomposition via additive components</li> -->
+                  <!-- <li>Computing high-value agent sets via demand queries</li> -->
                   <li>Scaling from submodular rewards to XOS</li>
                   <li>Tractability frontiers, hardness results, and open problems</li>
                 </ul>
@@ -297,15 +295,15 @@
               <div class="topic">
                 <strong>Extensions and emerging directions</strong>
                 <p>
-                  We survey recent extensions that broaden the scope of combinatorial contract design,
-                  beginning with multi-agent combinatorial actions and continuing to budget, fairness,
-                  task-assignment, and online variants.
+                  We survey recent extensions that broaden the scope of combinatorial contract design.
+                  <!-- beginning with multi-agent combinatorial actions and continuing to budget, fairness, -->
+                  <!-- task-assignment, and online variants. -->
                 </p>
                 <ul>
-                  <li>Rich action spaces and subset stability</li>
-                  <li>The doubling lemma and approximation guarantees</li>
-                  <li>Budget constraints and alternative objectives</li>
-                  <li>Fairness and non-discrimination constraints</li>
+                  <li>Combinatorial action spaces: tractability frontier and key insights</li>
+                  <!-- <li>The doubling lemma and approximation guarantees</li> -->
+                  <li>Introducing budget and fairness constraints</li>
+                  <li>Objectives beyond the principal's utility</li>
                   <li>General equilibrium concepts and further multi-agent models</li>
                 </ul>
               </div>
@@ -316,7 +314,7 @@
         <section id="audience">
           <h2>Target audience</h2>
           <p>
-            The tutorial is intended for researchers and students in algorithmic game theory, economics,
+            The tutorial is intended for researchers and students in algorithmic game theory, economics, operation research,
             and computer science. Familiarity with basic algorithms and probability is assumed. Prior
             exposure to mechanism design or submodular optimization is helpful, but not required.
           </p>
@@ -335,14 +333,85 @@
         <section id="references">
           <h2>Selected references</h2>
           <div class="refs">
-            <p>Babaioff, Feldman, and Nisan. <em>Combinatorial agency</em>. EC 2006.</p>
-            <p>Dütting, Ezra, Feldman, and Kesselheim. <em>Combinatorial contracts</em>. FOCS 2021.</p>
-            <p>Dütting, Ezra, Feldman, and Kesselheim. <em>Multi-agent contracts</em>. STOC 2023.</p>
-            <p>Dütting, Feldman, Talgam-Cohen, et al. <em>Algorithmic contract theory: A survey</em>. FnT TCS, 2024.</p>
-            <p>Dütting, Ezra, Feldman, and Kesselheim. <em>Multi-agent combinatorial contracts</em>. SODA 2025.</p>
-            <p>Feldman. <em>Combinatorial contract design: Recent progress and emerging frontiers</em>. 2025.</p>
-            <p>Feldman, Gal-Tzur, Ponitka, and Schlesinger. <em>Budget-feasible contracts</em>. EC 2025.</p>
-            <p>Feldman, Gal-Tzur, Ponitka, and Schlesinger. <em>Equal-pay contracts</em>. 2026.</p>
+            <p>
+  Babaioff, Feldman, and Nisan.
+  <em>
+    <a href="https://cs.tau.ac.il/~mfeldman/papers/BFNWj12.pdf" target="_blank">
+      Combinatorial agency
+    </a>
+  </em>.
+  EC 2006.
+</p>
+
+<p>
+  Dütting, Ezra, Feldman, and Kesselheim.
+  <em>
+    <a href="https://arxiv.org/abs/2211.05434" target="_blank">
+      Multi-agent contracts
+    </a>
+  </em>.
+  STOC 2023.
+</p>
+
+<p>
+  Dütting, Feldman, and Talgam-Cohen.
+  <em>
+    <a href="https://arxiv.org/abs/2412.16384" target="_blank">
+    Algorithmic contract theory: A survey
+    </a>
+  </em>.
+  FnT TCS, 2024.
+</p>
+
+<p>
+  Dütting, Ezra, Feldman, and Kesselheim.
+  <em>
+    <a href="https://arxiv.org/abs/2405.08260" target="_blank">
+      Multi-agent combinatorial contracts
+    </a>
+  </em>.
+  SODA 2025.
+</p>
+
+<p>
+  Feldman.
+  <em>
+    <a href="https://arxiv.org/abs/2510.15065" target="_blank">
+      Combinatorial contract design: Recent progress and emerging frontiers
+    </a>
+  </em>.
+  2025.
+</p>
+
+<p>
+  Aharoni, Hoefer, and Talgam-Cohen.
+  <em>
+    <a href="https://arxiv.org/abs/2504.18876" target="_blank">
+      Welfare and beyond in multi-agent contracts
+    </a>
+  </em>.
+  EC 2025.
+</p>
+
+<p>
+  Feldman, Gal-Tzur, Ponitka, and Schlesinger.
+  <em>
+    <a href="https://arxiv.org/abs/2504.01773" target="_blank">
+      Budget-feasible contracts
+    </a>
+  </em>.
+  EC 2025.
+</p>
+
+<p>
+  Feldman, Gal-Tzur, Ponitka, and Schlesinger.
+  <em>
+    <a href="https://arxiv.org/abs/2601.15478" target="_blank">
+      Equal-pay contracts
+    </a>
+  </em>.
+  2026.
+</p>
           </div>
         </section>
       </div>
@@ -374,10 +443,33 @@
 
         <h2 id="speakers" style="margin-top: 30px;">Presenters</h2>
         <div class="speakers">
-          <div class="speaker"><strong>Michal Feldman</strong><span>Tel Aviv University</span></div>
-          <div class="speaker"><strong>Yoav Gal-Tzur</strong><span>Tel Aviv University</span></div>
-          <div class="speaker"><strong>Tomasz Ponitka</strong><span>Tel Aviv University</span></div>
-          <div class="speaker"><strong>Maya Schlesinger</strong><span>Tel Aviv University</span></div>
+          <div class="speaker">
+            <strong>
+              <a href="https://www.mfeldman.sites.tau.ac.il/" target="_blank">Michal Feldman</a>
+            </strong>
+            <span>Tel Aviv University</span>
+          </div>
+          <div class="speakers">
+          <div class="speaker">
+            <strong>
+              <a href="https://yoavgaltzur.github.io/" target="_blank">Yoav Gal-Tzur</a>
+            </strong>
+            <span>Tel Aviv University</span>
+          </div>
+            <div class="speakers">
+          <div class="speaker">
+            <strong>
+              <a href="https://ponitka.github.io/" target="_blank">Tomasz Ponitka</a>
+            </strong>
+            <span>Tel Aviv University</span>
+          </div>
+              <div class="speakers">
+          <div class="speaker">
+            <strong>
+              <a href="https://maya-schles.github.io/" target="_blank">Maya Schlesinger</a>
+            </strong>
+            <span>Tel Aviv University</span>
+          </div>
         </div>
       </aside>
     </div>
